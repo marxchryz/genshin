@@ -1,0 +1,51 @@
+* {
+  font-family: 'Prompt', sans-serif;
+}
+body {
+  background: #eee;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.navbar {
+  height: 30px !important;
+}
+.nav-item {
+  margin: 0 20px;
+}
+.content {
+  height: 100vh;
+  background: url('../images/backdrop.png') no-repeat fixed;
+}
+.card {
+  border-radius: 20px;
+  border: none;
+}
+.card-img-top {
+  border-radius: 20px 20px 0 0;
+}
+.card {
+  background-color: transparent;
+}
+.card-body {
+  background-color: rgba(0,0,0,.95);
+  border-radius: 0 0 20px 20px;
+}
+.text-yellow {
+  color: #e3c05f;
+}
+.btn-main-page {
+  border-radius: 20px;
+  line-height: 10px;
+  background-color: #dedede;
+  width: 120px;
+}
+.btn-main-page-active {
+  border-radius: 20px;
+  line-height: 10px;
+  background-color: #212529;
+  width: 120px;
+  color: white;
+}
+.btn-main-page-active:hover {
+  color: white;
+}
