@@ -51,7 +51,7 @@ body {
   color: #e3c05f;
 }
 .btn-main-page {
-  border-radius: 20px;
+  border-radius: 20px !important;
   line-height: 10px;
   background-color: #dedede;
   width: 120px;
@@ -75,4 +75,7 @@ body {
 }
 .carousel-indicators .active {
   background-image: url('../images/indicator-active.png') !important;
+}
+a.active {
+  background-color: #212529 !important;
 }
