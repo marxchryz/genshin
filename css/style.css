@@ -13,13 +13,16 @@ body {
 }
 .content {
   background: url('../images/backdrop.png');
-  background-size: 100vw auto;
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .card {
   border-radius: 20px;
   border: none;
 }
-.card-img-top, .carousel-img {
+.card-img-top,
+.carousel-img {
   border-radius: 20px 20px 0 0;
 }
 .carousel-img {
@@ -29,11 +32,11 @@ body {
   background-color: transparent;
 }
 .card-body {
-  background-color: rgba(0,0,0,.95);
+  background-color: rgba(0, 0, 0, 0.95);
   border-radius: 0 0 20px 20px;
 }
 .carousel-nav {
-  background-color: rgba(0,0,0,.95);
+  background-color: rgba(0, 0, 0, 0.95);
   border-radius: 0 0 20px 20px;
   padding: 10px 0;
 }
@@ -56,26 +59,59 @@ body {
   background-color: #dedede;
   width: 120px;
 }
-.btn-main-page-active {
-  border-radius: 20px;
-  line-height: 10px;
-  background-color: #212529;
-  width: 120px;
-  color: white;
-}
-.btn-main-page-active:hover {
-  color: white;
-}
 .carousel-indicators li {
-  background-image: url('../images/indicator.png');
+  background-image: url('../images/icons/indicator.png');
   background-size: 100%;
   background-color: transparent;
   width: 22px;
   height: 22px;
 }
 .carousel-indicators .active {
-  background-image: url('../images/indicator-active.png') !important;
+  background-image: url('../images/icons/indicator-active.png') !important;
 }
 a.active {
   background-color: #212529 !important;
+}
+ul .dropdown-menu {
+  border: solid #212529 2px;
+  border-top: none;
+  border-radius: 0;
+  background-color: rgba(200, 200, 200, 0.9);
+  padding: 0;
+  margin-top: -5px;
+}
+.dropdown-toggle[aria-expanded="true"] {
+  margin-top: 5px;
+  height: 30px;
+  border: solid #212529 2px;
+  border-top: none;
+  border-bottom: none;
+  background-color: rgba(200, 200, 200, 0.9) !important;
+  color:#000 !important;
+  padding: 2px 0 0 0;
+}
+.sub-menu {
+  background: #212529;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 15px;
+}
+.sub-menu img {
+  height: 30px;
+  opacity: 0.3;
+}
+.sub-menu img:hover {
+  cursor: pointer;
+}
+.input-group {
+  margin-top: 2px;
+}
+.input-group .form-control {
+  height: 25px;
+  border-radius: 10px 0 0 10px;
+}
+.input-group-text {
+  height: 25px;
+  background: white;
+  border-radius: 0 10px 10px 0;
 }

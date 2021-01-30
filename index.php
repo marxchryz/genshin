@@ -61,8 +61,8 @@ foreach($types as $type):
 											</ul>
 											<div class="carousel-nav">
 												<div class="d-flex justify-content-around">
-													<a href="#<?=$type?>-carousel" data-slide="prev"> <img src="./images/navigator-left.png"> </a>
-													<a href="#<?=$type?>-carousel" data-slide="next"> <img src="./images/navigator-right.png"> </a>
+													<a href="#<?=$type?>-carousel" data-slide="prev"> <img src="./images/icons/navigator-left.png"> </a>
+													<a href="#<?=$type?>-carousel" data-slide="next"> <img src="./images/icons/navigator-right.png"> </a>
 												</div>
 											</div>
 										</div>
