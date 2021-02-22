@@ -115,3 +115,6 @@ ul .dropdown-menu {
   background: white;
   border-radius: 0 10px 10px 0;
 }
+.card-with-modal:hover {
+  cursor: pointer;
+}

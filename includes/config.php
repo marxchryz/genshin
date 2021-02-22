@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['SERVER_NAME'] === 'localhost'){
+if($_SERVER['HTTP_HOST'] === 'localhost:1234'){
   $user = 'pmauser';
   $pass = 'Pm4u53r!';
   $host = 'localhost';

@@ -15,7 +15,7 @@ const showCards = (cards, filter = '', search = '') => {
       s += '<div class="row">';
     }
     s += `          <div class="col">
- 					  <div class="card mb-3"> <img src="${card.image}" class="card-img-top">
+ 					  <div class="card mb-3 card-with-modal" data-toggle="modal" data-target="#card-modal" id="${card.name}"> <img src="${card.image}" class="card-img-top">
 						  <div class="card-body text-yellow text-center py-1">
 							  ${card.name}
 						  </div>
@@ -56,4 +56,10 @@ $('#character-search').on('change keyup paste', function () {
     .filter((i, obj) => $(obj).css('opacity') == '1')[0]
     ?.getAttribute('id');
   showCards(all, filter, search);
+});
+
+$(function () {
+  $('.card-with-modal').on('click', function () {
+    $('.modal-body').html(this.id);
+  });
 });
