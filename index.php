@@ -27,7 +27,6 @@ $featured = mysqli_fetch_assoc(mysqli_query($conn, 'SELECT * FROM featured ORDER
 								<div class="card-body text-yellow">
 									<?=$featured['description']?>
 										<br>
-										<div class="float-right">Info</div>
 								</div>
 							</div>
 						</div>

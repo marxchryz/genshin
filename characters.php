@@ -25,7 +25,7 @@
                     <div class="mx-2"><img src="./images/icons/Element_Hydro.png" id="hydro" /></div>
                     <div class="mx-2"><img src="./images/icons/Element_Pyro.png" id="pyro" /></div>
                     <div class="mx-2"><img src="./images/icons/Element_Anemo.png" id="anemo" /></div>
-                    <div class="mx-2"><img src="./images/icons/Element_Dendro.png" id="dendro" /></div>
+                    <div class="mx-2"><img src="./images/icons/Element_Cryo.png" id="cryo" /></div>
                     <div class="d-flex ml-auto">
                         <div class="mr-2 mt-1">Search for a character...</div>
                         <div class="">

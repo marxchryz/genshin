@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 26, 2021 at 08:49 PM
+-- Generation Time: Feb 27, 2021 at 12:18 AM
 -- Server version: 8.0.23-0ubuntu0.20.04.1
 -- PHP Version: 7.4.3
 
@@ -36,7 +36,7 @@ CREATE TABLE `artifacts` (
   `four-piece` varchar(800) NOT NULL,
   `location` varchar(800) NOT NULL,
   `image` varchar(800) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `artifacts`
@@ -83,7 +83,7 @@ CREATE TABLE `cards` (
   `image` varchar(800) NOT NULL,
   `name` varchar(800) NOT NULL,
   `filters` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `cards`
@@ -91,21 +91,21 @@ CREATE TABLE `cards` (
 
 INSERT INTO `cards` (`id`, `type`, `image`, `name`, `filters`) VALUES
 (1, 'characters', './images/cards/Character_Noelle_Card.jpg', 'Noelle', '[\"geo\"]'),
-(2, 'characters', './images/cards/Character_Ganyu_Card.png', 'Ganyu', '[\"dendro\"]'),
+(2, 'characters', './images/cards/Character_Ganyu_Card.png', 'Ganyu', '[\"cryo\"]'),
 (3, 'characters', './images/cards/Character_Bennett_Card.jpg', 'Bennett', '[\"pyro\"]'),
 (4, 'characters', './images/cards/Character_Diluc_Card.jpg', 'Diluc', '[\"pyro\"]'),
 (5, 'characters', './images/cards/Character_Xiao_Card.jpg', 'Xiao', '[\"anemo\"]'),
-(6, 'characters', './images/cards/Character_Kaeya_Card.jpg', 'Kaeya', '[\"dendro\"]'),
+(6, 'characters', './images/cards/Character_Kaeya_Card.jpg', 'Kaeya', '[\"cryo\"]'),
 (7, 'characters', './images/cards/Character_Fischl_Card.jpg', 'Fischl', '[\"electro\"]'),
-(9, 'characters', './images/cards/Character_Qiqi_Card.jpg', 'Qiqi', '[\"dendro\"]'),
+(8, 'characters', './images/cards/Character_Qiqi_Card.jpg', 'Qiqi', '[\"cryo\"]'),
 (9, 'characters', './images/cards/Character_Razor_Card.jpg', 'Razor', '[\"electro\"]'),
 (10, 'characters', './images/cards/Character_Amber_Card.jpg', 'Amber', '[\"pyro\"]'),
 (11, 'characters', './images/cards/Character_Sucrose_Card.jpg', 'Sucrose', '[\"anemo\"]'),
 (12, 'characters', './images/cards/Character_Lisa_Card.jpg', 'Lisa', '[\"electro\"]'),
 (13, 'characters', './images/cards/Character_Keqing_Card.jpg', 'Keqing', '[\"electro\"]'),
 (14, 'characters', './images/cards/Character_Venti_Card.jpg', 'Venti', '[\"anemo\"]'),
-(15, 'characters', './images/cards/Character_Diona_Card.png', 'Diona', '[\"dendro\"]'),
-(16, 'characters', './images/cards/Character_Chongyun_Card.jpg', 'Chongyun', '[\"dendro\"]'),
+(15, 'characters', './images/cards/Character_Diona_Card.png', 'Diona', '[\"cryo\"]'),
+(16, 'characters', './images/cards/Character_Chongyun_Card.jpg', 'Chongyun', '[\"cryo\"]'),
 (17, 'characters', './images/cards/Character_Tartaglia_Card.png', 'Tartaglia', '[\"hydro\"]'),
 (18, 'characters', './images/cards/Character_Klee_Card.jpg', 'Klee', '[\"pyro\"]'),
 (19, 'characters', './images/cards/Character_Ningguang_Card.jpg', 'Ningguang', '[\"geo\"]'),
@@ -114,7 +114,10 @@ INSERT INTO `cards` (`id`, `type`, `image`, `name`, `filters`) VALUES
 (22, 'characters', './images/cards/Character_Barbara_Card.jpg', 'Barbara', '[\"hydro\"]'),
 (23, 'characters', './images/cards/Character_Albedo_Card.png', 'Albedo', '[\"geo\"]'),
 (24, 'characters', './images/cards/Character_Zhongli_Card.jpg', 'Zhongli', '[\"geo\"]'),
-(25, 'characters', './images/cards/Character_Xinyan_Card.jpg', 'Xinyan', '[\"pyro\"]');
+(25, 'characters', './images/cards/Character_Xinyan_Card.jpg', 'Xinyan', '[\"pyro\"]'),
+(26, 'characters', './images/cards/Character_Beidou_Card.jpg', 'Beidou', '[\"electro\"]'),
+(27, 'characters', './images/cards/Character_Xiangling_Card.jpg', 'Xiangling', '[\"pyro\"]'),
+(28, 'characters', './images/cards/Character_Xingqiu_Card.jpg', 'Xingqiu', '[\"hydro\"]');
 
 -- --------------------------------------------------------
 
@@ -126,7 +129,7 @@ CREATE TABLE `carousel` (
   `id` int NOT NULL,
   `type` varchar(800) NOT NULL,
   `image` varchar(800) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `carousel`
@@ -154,7 +157,7 @@ CREATE TABLE `featured` (
   `id` int NOT NULL,
   `image` varchar(800) NOT NULL,
   `description` varchar(800) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `featured`
@@ -180,7 +183,7 @@ CREATE TABLE `weapons` (
   `bonus` varchar(800) NOT NULL,
   `location` varchar(800) NOT NULL,
   `image` varchar(800) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `weapons`
@@ -341,7 +344,7 @@ ALTER TABLE `artifacts`
 -- AUTO_INCREMENT for table `cards`
 --
 ALTER TABLE `cards`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `carousel`
