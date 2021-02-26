@@ -60,6 +60,14 @@ $('#character-search').on('change keyup paste', function () {
 
 $(function () {
   $('.card-with-modal').on('click', function () {
-    $('.modal-body').html(this.id);
+    $('.modal-body').html(
+      `<img class="popup-image" src="./images/popups/${this.id.toLowerCase()}-body.png">`
+    );
+    $('.modal-title').html(
+      `<img class="popup-header" src="./images/popups/${this.id.toLowerCase()}-header.png">`
+    );
+  });
+  $('.modal-title').on('click', function () {
+    $('.modal').modal('hide');
   });
 });

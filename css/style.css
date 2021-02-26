@@ -118,3 +118,24 @@ ul .dropdown-menu {
 .card-with-modal:hover {
   cursor: pointer;
 }
+.modal-body, .popup-image {
+  border-radius: 0 0 13px 13px;
+}
+.modal-header, .popup-header {
+  border-radius: 13px 13px 0 0;
+}
+.modal-content {
+  border-radius: 13px;
+}
+.popup-image, .popup-header {
+  width: 800px;
+}
+.star {
+  margin-right: -15px;
+}
+.weapon {
+  width: 50px;
+  border-radius: 5px;
+  background-color: #36384A;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
