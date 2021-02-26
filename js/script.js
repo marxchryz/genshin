@@ -61,13 +61,22 @@ $('#character-search').on('change keyup paste', function () {
 $(function () {
   $('.card-with-modal').on('click', function () {
     $('.modal-body').html(
-      `<img class="popup-image" src="./images/popups/${this.id.toLowerCase()}-body.png">`
+      `<img class="popup-image" src="./images/popups/characters/${this.id.toLowerCase()}-body.png">`
     );
     $('.modal-title').html(
-      `<img class="popup-header" src="./images/popups/${this.id.toLowerCase()}-header.png">`
+      `<img class="popup-header" src="./images/popups/characters/${this.id.toLowerCase()}-header.png">`
     );
   });
   $('.modal-title').on('click', function () {
     $('.modal').modal('hide');
+  });
+  $('.farm-routes-menu img').on('click', function () {
+    $('.modal-body').html(
+      `<img class="popup-image" src="./images/popups/routes/${this.id.toLowerCase()}-body.png">`
+    );
+    $('.modal-title').html(
+      `<img class="popup-header" src="./images/popups/routes/${this.id.toLowerCase()}-header.png">`
+    );
+    $('#routes-modal').modal('show');
   });
 });

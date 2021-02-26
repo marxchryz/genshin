@@ -51,7 +51,7 @@ foreach($types as $type):
 										<div id="<?=$type?>-carousel" class="carousel slide" data-ride="<?=$type?>-carousel">
 											<div class="carousel-inner">
 												<?php $i=0; while($row=mysqli_fetch_assoc($carousel)): ?>
-													<div class="carousel-item <?=$i++?'':'active'?>"> <img class="carousel-img" src="<?=$row[image]?>"> </div>
+													<div class="carousel-item <?=$i++?'':'active'?>"> <img class="carousel-img" src="<?=$row['image']?>"> </div>
 													<?php endwhile; ?>
 											</div>
 											<ul class="carousel-indicators">

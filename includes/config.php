@@ -1,5 +1,9 @@
 <?php
-if($_SERVER['HTTP_HOST'] === 'localhost:1234'){
+$user = '3622845_genshin';
+$pass = 'zqXkm}GB3XwxBpE}';
+$host = 'fdb29.atspace.me';
+$db = '3622845_genshin';
+if(strpos($_SERVER['HTTP_HOST'], 'localhost') !== false){
   $user = 'pmauser';
   $pass = 'Pm4u53r!';
   $host = 'localhost';
