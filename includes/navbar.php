@@ -11,7 +11,7 @@
           <li class="nav-item <?=$page=='routes'?'active':''?>"> <a class="nav-link" href="./farm-routes.php">FARM ROUTES</a> </li>
 				</ul>
 				<ul class="navbar-nav ml-auto">
-          <li class="nav-item <?=$page=='about us'?'active':''?>"> <a class="nav-link" href="#">ABOUT US</a> </li>
+<!--          <li class="nav-item <?=$page=='about us'?'active':''?>"> <a class="nav-link" href="#">ABOUT US</a> </li> -->
 				</ul>
 			</div>
 		</div>
